@@ -1,0 +1,27 @@
+extends layout
+block content
+    script(src='/socket.io/socket.io.js')
+    script(src='/js/myScript.js')
+    script(src='/js/gamePad.js')
+    div(class='jumbotron')                
+        div(class='row-fluid')
+            ul(class='nav nav-tabs')
+                li(id='button1') 1
+                li(id='button2') 2
+                li(id='button3') 3
+                li(id='button4') 4
+                li(id='buttonL1') L1
+                li(id='buttonR1') R1
+                li(id='buttonL2') L2
+                li(id='buttonR2') R2
+                li(id='buttonSelect') SELECT
+                li(id='buttonStart') START
+                li(id='buttonLeftStick') LeftStick
+                li(id='buttonRightStick') RightStick
+                li(id='stick2') Stick2
+                li(id='stick3') Stick3
+                
+        div(class='row-fluid')
+            div(class='span12')
+                div(class='hero-unit')
+                    div(id='sensorList')
